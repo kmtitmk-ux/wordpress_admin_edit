@@ -1,0 +1,10 @@
+wp-config.php
+wp-config-sample.php
+www/*
+www/wp-content/*
+www/wp-content/themes/*
+!wp-content
+!themes
+!mu-plugins
+!original
+.data

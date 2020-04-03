@@ -1,0 +1,38 @@
+//buttonタグのデザインをリセット
+@mixin button_reset() {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.add_field {
+    border-bottom: 1px solid #ccd0d4;
+    button:not(.button) {
+        @include button_reset();
+    }
+}
+
+button {
+    &.remove, &.add {
+        @include button_reset();
+    }
+}
+
+.media-remove {
+    color: #d94f4f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.get_list {
+    th {
+        padding-left: 10px;
+        width: auto;
+    }
+    th, td {
+        border: 1px solid;
+    }
+}
